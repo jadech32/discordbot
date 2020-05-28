@@ -2,6 +2,8 @@
 
 Discord Bot is a modular boilerplate for a simple command-based discord bot that I have open-sourced from my private use.
 
+![Example Commmand](https://i.imgur.com/GxkLw1H.png)
+
 ## Features
 
 Discord Bot is:
@@ -33,7 +35,9 @@ Create a `<module>.go` file in `pkg/modules` for your new module. It must fulfil
 
 Note: Modules are acted only upon by text commands. For custom handlers, see below.
 
+### Registering the module
 
+Register the module in `main.go` as long as the new module struct satisfies the `Modules` interface.
 
 ### Custom Handlers
 
