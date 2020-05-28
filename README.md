@@ -9,11 +9,19 @@ Discord Bot is:
 * Adjustable prefix
 * Containerized (provided Dockerfile)
 
+## Installation
+
+`go mod download`
+
 ## How To Run
 
 Create a `.env` file in the root directory which contains your Bot Token and optionally, a prefix
 
 Default Webhook Embed formatting can be edited in the `pkg/helpers` package.
+
+Run it in:
+* A Container
+* `go run cmd/main.go`
 
 ## Adding New Modules
 
@@ -24,6 +32,8 @@ New modular modules can be created and binded to a specific command.
 Create a `<module>.go` file in `pkg/modules` for your new module. It must fulfill the `Modules` interface defined in `pkg/modules/modules.go`. 
 
 Note: Modules are acted only upon by text commands. For custom handlers, see below.
+
+
 
 ### Custom Handlers
 
